@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BMOnlineTest.SiteMaster" %>
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>My Exam Site</title>
+    <link rel="stylesheet" type="text/css" href="Content/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1>&nbsp;</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="About.aspx">About</a></li>
+                        <li><a href="RegistrationPage.aspx">Apply</a></li>
+                                                
+          
+          
+                    </ul>
+                </nav>
+                <asp:Image ID="Image1" runat="server" Height="62px" ImageUrl="~/Images/Codew.jpg" Width="71px" />
+            </div>
+        </header>
+        
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <p>CODE WORD BY BRAKOBALOA Tech © 2024</p>
+        </footer>
+    </form>
+</body>
+</html>
